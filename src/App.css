@@ -1,0 +1,224 @@
+.app-container {
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.input-section {
+  margin-bottom: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.input-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  resize: vertical;
+  min-height: 150px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.analyze-button {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.analyze-button:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+.analyze-button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.analysis-section {
+  display: flex;
+  gap: 1rem;
+  height: calc(100vh - 200px);
+}
+
+.graph-section {
+  flex: 2;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.graph-section.full-width {
+  flex: 1;
+}
+
+.nodes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.node-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.node {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  min-width: 200px;
+  transition: all 0.2s ease;
+}
+
+.node.selected {
+  ring: 2px solid #4a90e2;
+}
+
+.input-node {
+  background-color: #e3f2fd;
+}
+
+.thought-node {
+  background-color: #e8f5e9;
+}
+
+.subthought-node {
+  background-color: #fff3e0;
+}
+
+.mode-node {
+  background-color: #f3e5f5;
+}
+
+.node-connector {
+  width: 2px;
+  height: 2rem;
+  background-color: #e0e0e0;
+}
+
+.iterations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.iteration-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iteration-label {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.logs-panel {
+  flex: 1;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logs-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.toggle-logs-button {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.toggle-logs-button:hover {
+  background-color: #e0e0e0;
+}
+
+.logs-content {
+  flex: 1;
+  padding: 1.5rem;
+  font-family: monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  color: #2c3e50;
+}
+
+.log-entry {
+  width: 100%;
+}
+
+.show-logs-button {
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: none;
+}
+
+.show-logs-button:hover {
+  background-color: #e0e0e0;
+}
+
+.shell-bar {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #4a90e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #2c3e50;
+}
